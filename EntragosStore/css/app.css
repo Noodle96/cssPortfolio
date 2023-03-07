@@ -9,6 +9,10 @@ a{
     text-decoration: none;
     color: #000;
 }
+img{
+    max-width: 100%;
+}
+
 .contenedor{
     max-width: 1200px;
     margin: 0 auto 0 auto;
@@ -38,4 +42,11 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
+}
+
+/* Categorias */
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
 }
