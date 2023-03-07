@@ -10,7 +10,8 @@ a{
     color: #000;
 }
 img{
-    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 
 .contenedor{
@@ -45,8 +46,29 @@ img{
 }
 
 /* Categorias */
+.categorias h2{
+    text-align: center;
+}
+.categorias h2 span{
+    color: #ee4a4a;
+}
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ee4a4a;
+    border-bottom-right-radius: 10px;
+    background-color: #eec2c2;
+}
+.categoria a:hover{
+    background-color: #ee4a4a;
+    color: #ffffff;
+    border-bottom-right-radius: 10px;
+}
 .listado-categorias{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
 }
+
