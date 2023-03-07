@@ -28,7 +28,10 @@ a{
 }
 
 .nav-principal{
+    display: flex;
     padding: 20px 0 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .hero{
     background-image: url(../img/licores/principal.jpg);
