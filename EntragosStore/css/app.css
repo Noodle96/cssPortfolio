@@ -1,9 +1,11 @@
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+    font-size: 62.5%; /*1REM =  10px*/
+}
+*, *:before, *:after {
     box-sizing: inherit;
 }
+
 /* Glocales */
 a{
     text-decoration: none;
@@ -15,6 +17,7 @@ img{
 }
 body{
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Rubik Iso', cursive;
@@ -22,13 +25,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto 0 auto;
 }
 
 .nombre-sitio{
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 .nombre-sitio span{
@@ -36,12 +39,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .contenedor-navegacion{
-    border-top: 1px solid #e1e1e1;
+    border-top: 0.1rem solid #e1e1e1;
 }
 
 .nav-principal{
     display: flex;
-    padding: 20px 0 20px 0;
+    padding: 2rem 0 2rem 0;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -49,7 +52,7 @@ h1,h2,h3,h4,h5,h6{
     background-image: url(../img/licores/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 60rem;
 }
 
 /* Categorias */
@@ -62,20 +65,20 @@ h1,h2,h3,h4,h5,h6{
 .categoria a{
     text-align: center;
     display: block;
-    padding: 20px;
-    font-size: 20px;
-    border: 1px solid #ee4a4a;
-    border-bottom-right-radius: 10px;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 0.1rem  solid #ee4a4a;
+    border-bottom-right-radius: 1rem;
     background-color: #eec2c2;
 }
 .categoria a:hover{
     background-color: #ee4a4a;
     color: #ffffff;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 1rem;
 }
 .listado-categorias{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 2rem;
 }
 
