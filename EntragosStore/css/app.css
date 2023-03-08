@@ -6,13 +6,13 @@ html {
     box-sizing: inherit;
 }
 
-/* Glocales */
+/* Globales */
 a{
     text-decoration: none;
     color: #000;
 }
 img{
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 body{
@@ -22,7 +22,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Rubik Iso', cursive;
-    margin: 3rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 }
 h1{
     font-size: 5rem;
@@ -33,6 +33,12 @@ h2{
 h3{
     font-size: 3rem;
 }
+
+/* Utilidades */
+.text-center{
+    text-align: center;
+}
+
 
 .contenedor{
     max-width: 120rem;
@@ -66,9 +72,7 @@ h3{
 }
 
 /* Categorias */
-.categorias h2{
-    text-align: center;
-}
+
 .categorias h2 span{
     color: #ee4a4a;
 }
@@ -113,3 +117,26 @@ h3{
     padding-left: 10rem;
     color: white;
 }
+
+
+/* Listado de productos */
+.contenido-principal h2 span{
+    color:#ee4a4a;
+}
+.producto{
+    background-color: #ee4a4a;
+}
+.texto-producto{
+    text-align:center;
+    color: #fff;
+}
+.texto-producto p{
+    margin:0;
+}
+.texto-producto .precio{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+/* .texto-producto a{
+
+} */
