@@ -34,7 +34,7 @@ h3{
     font-size: 3rem;
 }
 .btn{
-    background-color: #9f6adb;
+    background-color: #06c0f8;
     color: #ffffff;
     display: block;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ h3{
     transition: background-color .3s ease-in-out;
 }
 .btn:hover{
-    background-color: #8a4ecf;
+    background-color: #04eb3e;
 }
 
 
@@ -210,4 +210,19 @@ h3{
 }
 .footer-menu a{
     display: block;
+}
+
+/* Nosotros.html */
+.contenido-nosotros{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    /* gap: 2rem; */
+    column-gap: 2rem;
+}
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
