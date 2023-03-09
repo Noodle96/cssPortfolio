@@ -91,3 +91,15 @@ h1, h2 {
     /* justify-content: space-between; */
     justify-content: space-evenly;
 }
+/* 004 */
+.d-flex-4{
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-between;
+}
