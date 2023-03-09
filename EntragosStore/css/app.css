@@ -38,12 +38,24 @@ h3{
     color: #ffffff;
     display: block;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     padding: .7rem;
     transition: background-color .3s ease-in-out;
 }
 .btn:hover{
     background-color: #04eb3e;
+}
+.btn-blog{
+    background-color: #ee4a4a;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .7rem;
+    transition: background-color .3s ease-in-out;
+}
+.btn-blog:hover{
+    background-color: #06c0f8;
 }
 
 
@@ -51,7 +63,9 @@ h3{
 .text-center{
     text-align: center;
 }
-
+.max-width-30{
+    max-width: 30rem;
+}
 
 .contenedor{
     max-width: 120rem;
@@ -196,7 +210,7 @@ h3{
 }
 .texto-producto .precio{
     font-size: 2.8rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 /* Footer */
 .footer-principal{
@@ -225,4 +239,29 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+/* Blog.html */
+.contendor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+.entrada{
+    border-bottom: .2rem solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+}
+.entrada-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.entrada-meta p{
+    font-weight: 700;
+}
+.entrada-meta span{
+    color: #ee4a4a;
 }
