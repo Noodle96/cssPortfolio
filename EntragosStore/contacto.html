@@ -74,13 +74,28 @@
                 <legend>Información Extra</legend>
                 <div class="campo">
                     <label for="cliente">Cliente</label>
-                    <input type="radio" id="cliente" name="tipo">
+                    <input type="radio" id="cliente" name="tipo" value="cliente" required>
                 </div>
                 <div class="campo">
                     <label for="proveedor">Proveedor</label>
-                    <input type="radio" id="proveedor" name="tipo">
+                    <input type="radio" id="proveedor" name="tipo" value="proveedor">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoria de interes:</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Whisky">
+                        <option value="Piscos">
+                        <option value="Gines">
+                        <option value="Rones">
+                        <option value="Licores clasificados">
+                        <option value="Espumantes">
+                        <option value="Vinos">
+                        <option value="Zona Gourmet">
+                </datalist>
                 </div>
             </fieldset>
+            <input type="submit">
         </form>
     </main>
 
