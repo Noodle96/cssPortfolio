@@ -28,7 +28,7 @@ h1, h2 {
     background-color: var(--naranja);
     text-align: center;
     color: var(--blanco);
-    padding: 5rem;
+    padding: 2rem;
 
 }
 .caja-curso h1 {
@@ -65,4 +65,9 @@ h1, h2 {
 .contenedor > div {
     background-color: var(--blanco);
     padding: 5rem;
+}
+
+/* Flex */
+.d-flex{
+    display: flex;
 }
