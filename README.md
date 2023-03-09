@@ -16,3 +16,24 @@
 # Table of contents
 
 - [Entragos Store](#entragos-store)
+    - Navbar and Hero Home Screen
+    - Product Category and About Us Home Screen
+    - Our Products Home Screen
+    - Footer Home Screen
+    - About Us Screen
+    - Our Blog Screen
+    - Galery Screen
+    - Contact Screen
+
+# Entragos Store
+[(Back to top)](#table-of-contents)
+- Navbar and Hero Home Screen
+<p align="center">
+  <img src='img/inicio_01.png' width='800px' />
+</p>
+
+- Product Category and About Us Home Screen
+<p align="center">
+  <img src='img/inicio_02.png' width='800px' />
+</p>
+
