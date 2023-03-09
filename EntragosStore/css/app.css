@@ -271,3 +271,17 @@ h3{
     width: 60rem;
     margin: 0 auto 0 auto;
 }
+
+/* Galeria */
+.galeria{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.galeria img{
+    height: 25rem;
+    width: 50rem;
+    object-fit: cover;
+
+}
