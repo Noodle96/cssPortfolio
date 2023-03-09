@@ -71,3 +71,11 @@ h1, h2 {
 .d-flex{
     display: flex;
 }
+.d-flex-2{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; default */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    
+}
