@@ -68,14 +68,26 @@ h1, h2 {
 }
 
 /* Flex */
+/* 001 */
 .d-flex{
     display: flex;
 }
+/* 002 */
 .d-flex-2{
     display: flex;
     flex-direction: column;
     /* flex-direction: row; default */
     /* flex-direction: row-reverse; */
-    /* flex-direction: column-reverse; */
-    
+    /* flex-direction: column-reverse; */   
+}
+/* 003 */
+.d-flex-3{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
 }
