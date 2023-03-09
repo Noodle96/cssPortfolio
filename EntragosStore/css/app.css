@@ -41,9 +41,11 @@ h3{
     font-weight: 700;
     padding: .7rem;
     transition: background-color .3s ease-in-out;
+    border: none;
 }
 .btn:hover{
     background-color: #04eb3e;
+    cursor:pointer;
 }
 .btn-blog{
     background-color: #ee4a4a;
@@ -53,6 +55,7 @@ h3{
     font-weight: 700;
     padding: .7rem;
     transition: background-color .3s ease-in-out;
+    border: none;    
 }
 .btn-blog:hover{
     background-color: #06c0f8;
@@ -311,4 +314,18 @@ h3{
 }
 .campo label{
     flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select{
+    flex:1;
+    border: .1rem solid #e1e1e1;
+    padding: .8rem;
+}
+form input[type="submit"]{
+    margin-top: 1rem;
+}
+.contenedor-submit{
+    display: flex;
+    justify-content: right;
 }
