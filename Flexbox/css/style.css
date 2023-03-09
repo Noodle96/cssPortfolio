@@ -128,8 +128,15 @@ h1, h2 {
 .d-flex-7{
     display: flex;
     height: 80rem;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-
+    /* justify-content: center; */
+}
+/* 008 */
+.d-flex-8{
+    display: flex;
+}
+.d-flex-8 .box{
+    flex-basis: 33.33%;
+    flex-basis: 20rem;
 }
