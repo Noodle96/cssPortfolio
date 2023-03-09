@@ -265,3 +265,9 @@ h3{
 .entrada-meta span{
     color: #ee4a4a;
 }
+
+/* Entrada Blog */
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto 0 auto;
+}
