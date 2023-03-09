@@ -283,5 +283,32 @@ h3{
     height: 25rem;
     width: 50rem;
     object-fit: cover;
+}
 
+/* Formulario */
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: .1rem solid #000;
+    margin-bottom: 2rem1;
+}
+.formulario legend{
+    background-color: #ee4a4a;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .35rem;
+    margin-bottom: 2rem;
+}
+.campo{
+    display: flex;
+    /* flex-direction: row; */
+    margin-bottom: 1.5rem;
+}
+.campo label{
+    flex-basis: 10rem;
 }
