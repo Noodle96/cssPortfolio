@@ -103,3 +103,14 @@ h1, h2 {
     /* justify-content: space-between; */
     justify-content: space-between;
 }
+/* 005 */
+.d-flex-5{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    /* align-items: flex-start; */
+    align-items: flex-end;
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* align-items: stretch; default */
+}
