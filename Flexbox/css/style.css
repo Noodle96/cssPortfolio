@@ -190,3 +190,13 @@ h1, h2 {
 .d-flex-12 .box:nth-child(3){
     flex-shrink: 2;
 }
+.d-flex-13{
+    display: flex;
+    gap: 1rem;
+}
+.d-flex-13 .box{
+    /* grow */
+    /* shrink */
+    /* basis */
+    flex: 0 0 calc(33.3%)
+}
