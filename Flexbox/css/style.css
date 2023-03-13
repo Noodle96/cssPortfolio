@@ -171,7 +171,6 @@ h1, h2 {
     display: flex;
     gap: 2rem;
 }
-
 .d-flex-11 .box:nth-child(1){
     flex-grow: 1;
 }
@@ -179,4 +178,15 @@ h1, h2 {
     flex-grow: 2;
 }.d-flex-11 .box:nth-child(3){
     flex-grow: 3;
+}
+/* 012 */
+.d-flex-12{
+    display: flex;
+}
+.d-flex-12 .box{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.d-flex-12 .box:nth-child(3){
+    flex-shrink: 2;
 }
