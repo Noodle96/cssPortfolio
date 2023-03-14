@@ -139,3 +139,35 @@ h1, h2 {
 .grid-8 .box{
     margin:0;
 }
+
+/* 009 */
+.grid-9{
+    display: grid;
+    height: 120rem;
+    grid-template-areas: "header header header"
+                          "nav nav nav" 
+                          "contenido contenido sidebar"  
+                          "footer footer footer" 
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5fr 1fr 8fr 2fr;
+    gap:1.5rem;
+}
+.grid-9 .box{
+    margin: 0;
+}
+.grid-9 .box:nth-child(1){
+    grid-area: header;
+}
+.grid-9 .box:nth-child(2){
+    grid-area: nav;
+}
+.grid-9 .box:nth-child(3){
+    grid-area: contenido;
+}
+.grid-9 .box:nth-child(4){
+    grid-area: sidebar;
+}
+.grid-9 .box:nth-child(5){
+    grid-area: footer;
+}
