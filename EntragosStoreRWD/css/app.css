@@ -128,9 +128,14 @@ h3{
 }
 
 /* Categorias */
-
+.categorias{
+    padding: 3rem 1rem;
+}
 .categorias h2 span{
     color: #ee4a4a;
+}
+.categoria{
+    margin: 1rem 0;
 }
 .categoria a{
     text-align: center;
@@ -141,16 +146,32 @@ h3{
     border-bottom-right-radius: 1rem;
     background-color: #eec2c2;
 }
+.categoria img{
+    width: 100%;
+}
 .categoria a:hover{
     background-color: #ee4a4a;
     color: #ffffff;
     border-bottom-right-radius: 1rem;
 }
 .listado-categorias{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
+.listado-categorias .categoria{
+    flex-basis: calc(40%);
+    /* background-color: red; */
+}
+@media (min-width: 768px){
+    .listado-categorias{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 2rem;
+    }
+}
+
 
 /* Sobre Nosotros */
 .sobre-nosotros{
