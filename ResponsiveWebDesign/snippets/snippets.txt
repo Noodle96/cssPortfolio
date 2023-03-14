@@ -1,0 +1,19 @@
+command => user Snippets
+
+"imagenes":{
+        "prefix": "im",
+        "body": [
+            "<picture>",
+            "\t<source srcset=\"$1.avif\" type=\"img/avif\">",
+            "\t<source srcset=\"$2.webp\" type=\"img/webp\">",
+            "\t<img loading=\"lazy\" src=\"$3.jpg\" width=\"500\" height=\"300\" alt=\"$4\">",
+            "</picture>",
+        ]
+    }
+
+"Media Queries":{
+        "prefix": "mq",
+        "body": [
+            "@media (min-width: $1){\n\t$2\n}"
+        ]
+    }
