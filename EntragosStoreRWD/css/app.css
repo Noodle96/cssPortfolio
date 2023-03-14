@@ -156,9 +156,10 @@ h3{
 }
 .listado-categorias{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    flex-direction: column;
+    /* justify-content: space-around; */
 }
 .listado-categorias .categoria{
     flex-basis: calc(40%);
@@ -177,22 +178,45 @@ h3{
 .sobre-nosotros{
     margin-top: 5rem;
     background-image:
-     linear-gradient(to right,transparent 50%,#ee4a4a 50%,#ee4a4a 100%)
+     linear-gradient(to bottom,transparent 50%,#ee4a4a 50%,#ee4a4a 100%)
     ,url(../img/licores/nosotros.jpeg);
-    background-position: left center;
+    background-position: center, top left;
     background-repeat: no-repeat;
-    padding: 10rem 0 10rem 0;
-    background-size: 100%, 120rem;
+    /* padding: 10rem 0 10rem 0; */
+    background-size: 100%, 50rem;
+}
+@media (min-width: 768px){
+    .sobre-nosotros{
+        margin-top: 5rem;
+        background-image:
+         linear-gradient(to right,transparent 50%,#ee4a4a 50%,#ee4a4a 100%)
+        ,url(../img/licores/nosotros.jpeg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 10rem 0 10rem 0;
+        background-size: 100%, 100rem;
+    }
 }
 .sobre-nosotros-grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    /* row-gap: 10rem; */
+}
+@media (min-width: 768px){
+    .sobre-nosotros-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: unset;
+    }
 }
 .text-nosotros{
-    flex-basis: 50%;
-    padding-left: 10rem;
+    grid-row: 2/3;
     color: white;
+    padding: 5rem;
+}
+@media (min-width: 768px){
+    .text-nosotros{
+        grid-column: 2/3;
+    }
 }
 
 
