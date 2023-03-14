@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Entragos</span></h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+        <form action="#" class="formulario">
+            <fieldset>
+                <legend>Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Tu Nombre">
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="" id="asunto" placeholder="Tu Asunto">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="" id="email" placeholder="Tu Email">
+                </div>
+                <div class="campo">
+                    <label for="tel">Telefono: </label>
+                    <input type="tel" name="" id="tel" placeholder="Tu Telefono">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea name="" id="mensaje" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">Pais:</label>
+                    <select name="pais" id="pais">
+                        <option selected disabled value="">-- Seleccione --</option>
+                        <option value="peru">Perú</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="inglaterra">Inglaterra</option>
+                        <option value="mexico">México</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input type="radio" id="cliente" name="tipo" value="cliente" required>
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input type="radio" id="proveedor" name="tipo" value="proveedor">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoria de interes:</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Whisky">
+                        <option value="Piscos">
+                        <option value="Gines">
+                        <option value="Rones">
+                        <option value="Licores clasificados">
+                        <option value="Espumantes">
+                        <option value="Vinos">
+                        <option value="Zona Gourmet">
+                </datalist>
+                </div>
+            </fieldset>
+            <div class="contenedor-submit">
+                <input type="submit" value="Enviar Formulario" class="btn">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer-principal">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-menu">
+                    <a href="#">Whisky</a>
+                    <a href="#">Piscos</a>
+                    <a href="#">Rones</a>
+                    <a href="#">Gin</a>
+                    <a href="#">Licores variados</a>
+                    <a href="#">Vinos</a>
+                    <a href="#">Espumantes</a>
+                </nav>
+            </div>
+            <div>
+                <h3>About us</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politicas de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Ayuda en línea</a>
+                    <a href="#">Confianza y seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center">Todos los derechos reservados Tienda Entragos</p>
+    </footer>
+
+</body>
+</html>

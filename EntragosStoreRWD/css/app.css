@@ -1,0 +1,346 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1REM =  10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik Iso', cursive;
+    margin: 1rem 0 1rem 0;
+}
+h1{
+    font-size: 3.5rem;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 5rem;
+    }
+}
+h2{
+    font-size: 2.8rem;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 4rem;
+    }
+}
+h3{
+    font-size: 2.2rem;
+}
+@media (min-width: 768px){
+    h3{
+        font-size: 3rem;
+    }
+}
+.btn{
+    background-color: #06c0f8;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .7rem;
+    transition: background-color .3s ease-in-out;
+    border: none;
+}
+.btn:hover{
+    background-color: #04eb3e;
+    cursor:pointer;
+}
+.btn-blog{
+    background-color: #ee4a4a;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .7rem;
+    transition: background-color .3s ease-in-out;
+    border: none;    
+}
+.btn-blog:hover{
+    background-color: #06c0f8;
+}
+
+
+/* Utilidades */
+.text-center{
+    text-align: center;
+}
+.max-width-30{
+    max-width: 30rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.nombre-sitio{
+    margin-top: 5rem;
+    text-align: center;
+}
+.nombre-sitio span{
+    color: #ee4a4a;
+}
+
+.contenedor-navegacion{
+    border-top: 0.1rem solid #e1e1e1;
+}
+
+.nav-principal{
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hero{
+    background-image: url(../img/licores/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+}
+
+/* Categorias */
+
+.categorias h2 span{
+    color: #ee4a4a;
+}
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 0.1rem  solid #ee4a4a;
+    border-bottom-right-radius: 1rem;
+    background-color: #eec2c2;
+}
+.categoria a:hover{
+    background-color: #ee4a4a;
+    color: #ffffff;
+    border-bottom-right-radius: 1rem;
+}
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros{
+    margin-top: 5rem;
+    background-image:
+     linear-gradient(to right,transparent 50%,#ee4a4a 50%,#ee4a4a 100%)
+    ,url(../img/licores/nosotros.jpeg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 10rem 0 10rem 0;
+    background-size: 100%, 120rem;
+}
+.sobre-nosotros-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.text-nosotros{
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: white;
+}
+
+
+/* Listado de productos */
+.contenido-principal h2 span{
+    color:#ee4a4a;
+}
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;;
+}
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img{
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.producto{
+    background-color: #ee4a4a;
+    /* margin: 1rem 0 0 0 ; */
+}
+.texto-producto{
+    text-align:center;
+    color: #fff;
+    padding: 1rem;;
+}
+.texto-producto p{
+    margin:0 0;
+    padding: 1rem;
+}
+.texto-producto .precio{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+/* Footer */
+.footer-principal{
+    border-top: .1rem solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 3rem;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-menu a{
+    display: block;
+}
+
+/* Nosotros.html */
+.contenido-nosotros{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    /* gap: 2rem; */
+    column-gap: 2rem;
+}
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Blog.html */
+.contendor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+.entrada{
+    border-bottom: .2rem solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+}
+.entrada-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.entrada-meta p{
+    font-weight: 700;
+}
+.entrada-meta span{
+    color: #ee4a4a;
+}
+
+/* Entrada Blog */
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto 0 auto;
+}
+
+/* Galeria */
+.galeria{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.galeria img{
+    height: 25rem;
+    width: 50rem;
+    object-fit: cover;
+}
+
+/* Formulario */
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: .1rem solid #000;
+    margin-bottom: 2rem1;
+}
+.formulario legend{
+    background-color: #ee4a4a;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .35rem;
+    margin-bottom: 2rem;
+}
+.campo{
+    display: flex;
+    /* flex-direction: row; */
+    margin-bottom: 1.5rem;
+}
+.campo label{
+    flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select{
+    flex:1;
+    border: .1rem solid #e1e1e1;
+    padding: .8rem;
+}
+form input[type="submit"]{
+    margin-top: 1rem;
+}
+.contenedor-submit{
+    display: flex;
+    justify-content: right;
+}
