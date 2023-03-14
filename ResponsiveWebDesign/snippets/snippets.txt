@@ -17,3 +17,24 @@ command => user Snippets
             "@media (min-width: $1){\n\t$2\n}"
         ]
     }
+
+"imagenes2": {
+		"prefix": "pic",
+		"body": [
+			"<picture>",
+				"\t<source", 
+					"\t\t sizes=\"1920w, 1280w, 640w\" ",
+					"\t\t srcset=\"img/imagen.avif 1920w, \n\t\t\t img/imagen-1280.avif 1280w, \n\t\t\t img/imagen-640.avif 640w\" ",
+					"\t\t type=\"image/avif\">",
+				"\t<source", 
+					"\t\t sizes=\"1920w, 1280w, 640w\" ",
+					"\t\t srcset=\"img/imagen.webp 1920w, \n\t\t\t img/imagen-1280.webp 1280w, \n\t\t\t img/imagen-640.webp 640w\" ",
+					"\t\t type=\"image/webp\">",
+				"\t<source", 
+					"\t\t sizes=\"1920w, 1280w, 640w\" ",
+					"\t\t srcset=\"img/imagen.jpg 1920w, \n\t\t\t img/imagen-1280.jpg 1280w, \n\t\t\t img/imagen-640.jpg 640w\" ",
+					"\t\t type=\"image/jpeg\">",
+				"<img loading=\"lazy\" decoding=\"async\" src=\"img/imagen.jpg\" lazyalt=\"imagen\" width=\"500\" height=\"300\">",
+			"</picture>"
+		]
+	}
