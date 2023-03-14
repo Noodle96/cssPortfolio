@@ -300,15 +300,29 @@ h3{
 /* Footer */
 .footer-principal{
     border-top: .1rem solid #e1e1e1;
-    margin-top: 5rem;
+    margin: 5rem 0 0 3rem;
     padding-top: 3rem;
 }
-.grid-footer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
+
 .footer-menu a{
     display: block;
+    text-align: center;
+}
+.grid-footer h3{
+        text-align: center;
+}
+
+@media (min-width: 768px){
+    .grid-footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid-footer h3{
+        text-align: left;
+}
+    .footer-menu a{
+        text-align: left;
+    }
 }
 
 /* Nosotros.html */
