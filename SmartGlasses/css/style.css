@@ -1,3 +1,16 @@
+/* CUSTOM PROPERTIES */
+:root{
+    --fuentePrincipal: 'Barlow Semi Condensed', sans-serif;
+    --fuenteSecundaria: 'Rubik Iso', cursive;
+}
 body{
-    background-color: blue;
+    font-family: var(--fuentePrincipal);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--fuenteSecundaria);
 }
