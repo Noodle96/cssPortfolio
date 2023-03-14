@@ -105,15 +105,26 @@ h3{
 .nav-principal{
     display: flex;
     padding: 2rem 0 2rem 0;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .nav-principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 .hero{
     background-image: url(../img/licores/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 60rem;
+    height: 30rem;
+}
+@media (min-width: 768px){
+    .hero{
+        height: 60rem;
+    }
 }
 
 /* Categorias */
