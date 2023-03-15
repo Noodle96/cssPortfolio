@@ -245,8 +245,15 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform background-size;
+    transition-duration: .3s;
 }
-@media (min-width: ){
+.producto:hover{
+    transform: scale(1.1);
+    background-size: 35rem;
+}
+
+@media (min-width: 992px){
     .producto{
         background-size: 30rem;
     }
