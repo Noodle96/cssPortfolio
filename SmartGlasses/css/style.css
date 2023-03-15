@@ -1,5 +1,12 @@
 /* CUSTOM PROPERTIES */
 :root{
+    --primario: #1073BA;
+    --secundario: #00DA55;
+    --gris: #3B3B3B;
+    --blanco: #FFFFFF;
+    --negro: #1F1E1E;
+    --grisClaro: #e1e1e1;
+    --separacion: 5rem;
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: 'Lato', sans-serif;
 }
@@ -46,6 +53,7 @@ h3{
 img{
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /* Utilidades */
@@ -54,3 +62,15 @@ img{
 }
 
 /* -------------------------------------------------------------------------- */
+/* HEADER */
+.header{
+    background-color: var(--negro);
+    padding: calc(var(--separacion)  ) 0;
+    color: var(--blanco);
+}
+@media (min-width: 768px){
+    .contenido-header{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
