@@ -174,10 +174,28 @@ img{
     background-repeat: repeat, no-repeat;
     background-size: 100%, 76rem;
 }
+@media (min-width: 768px){
+    .sobre-tech{
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%),
+                            url(../img/glasses/imagenMujer.avif);
+        /* background-repeat: repeat, no-repeat; */
+        background-position: top,right;
+        background-size: 100%, auto;    
+    }
+}
 .sobre-tech-grid{
     display: grid;
     grid-template-rows: repeat(2,30rem);
     row-gap: var(--separacion);
+}
+@media (min-width: 768px){
+    .sobre-tech-grid{
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: var(--separacion);
+        padding: calc(var(--separacion)*2);
+    }
 }
 .texto-sobre-tech{
     grid-row-start: 2;
