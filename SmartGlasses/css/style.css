@@ -1,7 +1,9 @@
 /* CUSTOM PROPERTIES */
 :root{
-    --primario: #1073BA;
-    --secundario: #00DA55;
+    /* --primario: #1073BA; */
+    /* --secundario: #00DA55; */
+    --primario : #0723c2;
+    --secundario: #df0f0f;
     --gris: #3B3B3B;
     --blanco: #FFFFFF;
     --negro: #1F1E1E;
@@ -59,6 +61,12 @@ img{
 /* Utilidades */
 .text-center{
     text-align: center;
+}
+/* DEGRADADOS */
+.degradado-color{
+    color: transparent;
+    background:linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+    -webkit-background-clip: text;
 }
 
 /* -------------------------------------------------------------------------- */
