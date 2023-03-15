@@ -126,3 +126,12 @@ img{
     font-size: 5rem;
     font-weight: 900;
 }
+
+/* SECCION DE ICONOS */
+.iconos{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 1rem;
+}
