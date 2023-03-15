@@ -221,9 +221,17 @@ img{
     font-size: 5rem;
     margin-bottom: var(--separacion);
 }
-.listado-productos{
+.contenedor-productos{
     display: flex;
     flex-direction: column-reverse;
+}
+@media (min-width:992px ){
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,20rem);
+        gap: 4rem;
+    }
 }
 .producto{
     background-color: var(--grisClaro);
@@ -234,27 +242,49 @@ img{
     min-height: 20rem;
     background-position: 90% center;
     background-size: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: ){
+    .producto{
+        background-size: 30rem;
+    }
 }
 
 .producto:first-of-type{
     margin-bottom: 0;
 }
+@media (min-width: 992px){
+    .producto{
+        margin-bottom: 0;
+    }
+}
 .producto h3{
     font-size: 2.4rem;
 }
+
 .producto .precio{
     font-size: 4rem;
     font-weight: 900;
     line-height: 0;
 }
-.producto3 .precio{
-    /* font-size: 6rem; */
-}
+
 .producto3{
     background-color: var(--primario);
     background-image: url(../img/glasses/recomjet.png);
     background-repeat: no-repeat;
     color: var(--blanco);
+}
+@media (min-width: 992px){
+    .producto3{
+        grid-row: 1/3;
+        grid-column: 2/3;
+        background-size: 31rem;
+    }
+    .producto3 h3{
+        font-size: 4rem;
+    }
 }
 .producto2{
     background-image: url(../img/glasses/lumusdk40.png);
@@ -264,16 +294,4 @@ img{
     background-image: url(../img/glasses/googleGlass.png);
     background-repeat: no-repeat;
 }
-@media (min-width: 768px){
-    .contenedor-productos{
-        display: grid;
-        gap: 1rem;
-        grid-template-rows: repeat(2,1fr);
-        grid-template-columns: repeat(2,1fr);
-    }
-    .contenedor-productos .producto:nth-child(2){
-        background-color: var(--grisClaro);
-        grid-row: 1/3;
-        grid-column: 2/3;
-    }
-}
+
