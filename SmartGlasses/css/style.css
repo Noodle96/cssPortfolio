@@ -2,7 +2,7 @@
 :root{
     /* --primario: #1073BA; */
     /* --secundario: #00DA55; */
-    --primario : #3450eb;
+    --primario : #1073BA;
     --secundario: #df0f0f;
     --gris: #3B3B3B;
     --blanco: #FFFFFF;
@@ -193,8 +193,8 @@ img{
         grid-template-rows: unset;
         row-gap: unset;
         grid-template-columns: repeat(2,1fr);
-        column-gap: var(--separacion);
-        padding: calc(var(--separacion)*2);
+        /* column-gap: var(--separacion); */
+        padding: calc(var(--separacion)*2) 0;
     }
 }
 .texto-sobre-tech{
@@ -211,4 +211,69 @@ img{
 .texto-sobre-tech p{
     font-size: 2rem;
     line-height: 2;
+}
+
+/* ELECCION DE SMARTGLASSES */
+.modelos{
+    padding: var(--separacion) 01;
+}
+.header-modelos{
+    font-size: 5rem;
+    margin-bottom: var(--separacion);
+}
+.listado-productos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.producto{
+    background-color: var(--grisClaro);
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    color: var(--primario);
+    border-radius: 2rem;
+    min-height: 20rem;
+    background-position: 90% center;
+    background-size: 18rem;
+}
+
+.producto:first-of-type{
+    margin-bottom: 0;
+}
+.producto h3{
+    font-size: 2.4rem;
+}
+.producto .precio{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
+}
+.producto3 .precio{
+    /* font-size: 6rem; */
+}
+.producto3{
+    background-color: var(--primario);
+    background-image: url(../img/glasses/recomjet.png);
+    background-repeat: no-repeat;
+    color: var(--blanco);
+}
+.producto2{
+    background-image: url(../img/glasses/lumusdk40.png);
+    background-repeat: no-repeat;
+}
+.producto1{
+    background-image: url(../img/glasses/googleGlass.png);
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px){
+    .contenedor-productos{
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contenedor-productos .producto:nth-child(2){
+        background-color: var(--grisClaro);
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
 }
