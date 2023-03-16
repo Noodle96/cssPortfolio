@@ -65,3 +65,45 @@ img{
     margin-top: 5rem;
 }
 /* -------------------------------------------------------------------------- */
+                                /* UTILIDADES */
+.header{
+    min-height: 60rem;
+    background-image: url(../img/cinema/hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding: 5rem 0;
+}
+@media (min-width: 768px){
+    .header{
+        padding: 2rem 0;
+    }
+}
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--blanco);
+}
+.nombre-sitio{
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+@media (min-width: 468px){
+    .nombre-sitio{
+        font-size: 4.8rem;
+    }
+}
+.nombre-sitio span{
+    font-weight: 900;
+}
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
