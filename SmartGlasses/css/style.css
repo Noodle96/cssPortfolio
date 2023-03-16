@@ -310,7 +310,7 @@ img{
 
 /* NEWSLETTER */
 .newsletter{
-    margin: 7rem 0;
+    margin: 4rem 0;
     background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),
     url(../img/glasses/newsletter.webp);
     background-position: top center;
@@ -323,7 +323,7 @@ img{
         url(../img/glasses/newsletter.webp);
         background-position: center left;
         background-size: 100%, 100rem;
-        padding: 10rem 0;
+        padding: 15rem 0;
     }
 }
 .contenido-newsletter{
@@ -360,4 +360,14 @@ img{
     font-size: 2rem;
     font-weight: 900;
     border: none;
+}
+
+/* FOOTER */
+.footer p{
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--primario);
+    padding: 0 0 2rem 0;
 }
