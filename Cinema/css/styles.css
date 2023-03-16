@@ -64,21 +64,25 @@ img{
 .mt-5{
     margin-top: 5rem;
 }
+
+
+
+
 /* -------------------------------------------------------------------------- */
-                                /* UTILIDADES */
+                                /* HEADER */
 .header{
     min-height: 60rem;
     background-image: url(../img/cinema/hero.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center center;
+    background-position: center bottom;
     padding: 5rem 0;
 }
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .header{
         padding: 2rem 0;
     }
-}
+} */
 .contenido-header{
     display: flex;
     flex-direction: column;
@@ -106,4 +110,83 @@ img{
         justify-content: space-between;
         align-items: center;
     }
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.telefono{
+    display: flex;
+}
+.telefono::before{
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../img/cinema/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1rem;
+}
+@media (min-width: 768px){
+    
+    .contacto{
+        align-items: flex-end
+    }
+}
+.header a{
+    font-size: 2rem;
+    color: var(--blanco);
+}
+.navegacion{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+        /* gap: 2rem; */
+        justify-content: space-between;
+    }
+}
+.navegacion a{
+    padding: .5rem;
+    transition: background-color .3s;
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .navegacion {
+        padding: 1rem 1rem;
+    }
+}
+.navegacion a:hover{
+    background-color: rgb(255 255 255 / .5);
+}
+.slogan{
+    text-align: center;
+}
+@media (min-width: 768px){
+    .slogan{
+        text-align: right;
+    }
+}
+.slogan h1{
+    font-size: 3rem;
+    margin: 0;
+}
+@media (min-width: 768px){
+    .slogan h1{
+        font-size: 4rem;
+    }
+}
+.slogan p {
+    margin: 0;
+    line-height: 0;
+
 }
