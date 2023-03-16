@@ -16,24 +16,26 @@
 # Table of contents
 
 - [Entragos Store](#entragos-store)
-    - Navbar and Hero Home Screen
-    - Product Category and About Us Home Screen
+    <!-- - Navbar and Hero Home Screen -->
+    <!-- - Product Category and About Us Home Screen
     - Our Products Home Screen
     - Footer Home Screen
     - About Us Screen
     - Our Blog Screen
     - Galery Screen
-    - Contact Screen
+    - Contact Screen -->
+- [Smart Glasses](#smart-glasses)
 
 # Entragos Store
 [(Back to top)](#table-of-contents)
+- [Link Entragos Store](https://entragos-store.netlify.app/)
 <!-- #### Navbar and Hero Home Screen -->
 - Navbar and Hero Home Screen
 <p align="center">
-  <img src='img/inicio_01.png' width='800px' />
+  <img src='img/inicio_01.png' width='1200px' />
 </p>
 
-- Product Category and About Us Home Screen
+<!-- - Product Category and About Us Home Screen
 <p align="center">
   <img src='img/inicio_02.png' width='800px' />
 </p>
@@ -66,5 +68,12 @@
 - Contact Screen
 <p align="center">
   <img src='img/contacto.png' width='500px' />
-</p>
+</p> -->
 
+# Smart Glasses
+[(Back to top)](#table-of-contents)
+- [Link Smart Glasses Store](https://smart-glasses-store.netlify.app/)
+- Home Screen
+<p align="center">
+  <img src='img/smart-glasses.png' width='800px' />
+</p>
