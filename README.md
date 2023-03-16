@@ -32,7 +32,7 @@
 <!-- #### Navbar and Hero Home Screen -->
 - Navbar and Hero Home Screen
 <p align="center">
-  <img src='img/inicio_01.png' width='1200px' />
+  <img src='img/inicio_01.png' width='800px' />
 </p>
 
 <!-- - Product Category and About Us Home Screen
