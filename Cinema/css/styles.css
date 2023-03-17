@@ -23,7 +23,7 @@ h2,
 h3{
     font-weight: 900;
     line-height: 1.2;
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0 2.5rem 0;
 }
 h1{
     font-size: 4.8rem;
@@ -221,12 +221,31 @@ img{
     margin: 1rem;
 }
 
-/* SALAS */
+/* -------------------------------------------------------------------------- */
+                                /* SALAS */
+main >h2{
+    text-align: center;
+    font-size: 3.9rem;
+}
+@media (min-width:768px ){
+    main >h2{
+        font-size: 5.8rem;
+    }
+}
 .sala{
     display: grid;
     grid-template-rows: repeat(2,1fr);
     background-repeat: no-repeat;
     background-position: bottom center;
+    margin-bottom: 2rem;
+}
+.sala:last-of-type{
+    margin-bottom: 0;
+}
+@media (min-width: 768px){
+    .sala{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 .contenido-sala{
     padding: 4rem;
@@ -234,13 +253,37 @@ img{
 }
 .basica{
     background-image: url(../img/cinema/sala-basica.jpg);
-
 }
-.imax{
-    background-image: url(../img/cinema/sala-imax.jpg);
-
+@media (min-width: 768px){
+    .basica{
+        background-position: top right;
+    }
+    .basica .contenido-sala{
+        grid-row: 2/3;
+        padding: 2rem 2rem 2rem 0;
+    }
+    
 }
 .vr{
     background-image: url(../img/cinema/sala-vr.jpg);
-
+}
+@media (min-width: 768px){
+    .vr{
+        background-position: top left;
+    }
+    .vr .contenido-sala{
+        grid-column: 2/3;
+        padding: 2rem 0 2rem 2rem;
+    }
+}
+.imax{
+    background-image: url(../img/cinema/sala-imax.jpg);
+}
+@media (min-width: 768px){
+    .imax{
+        background-position: top right;
+    }
+    .imax .contenido-sala{
+        padding: 2rem 2rem 2rem 0;
+    }
 }
