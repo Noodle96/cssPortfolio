@@ -220,3 +220,27 @@ img{
 .contenido-nosotros p{
     margin: 1rem;
 }
+
+/* SALAS */
+.sala{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.contenido-sala{
+    padding: 4rem;
+    background-color: var(--blanco);
+}
+.basica{
+    background-image: url(../img/cinema/sala-basica.jpg);
+
+}
+.imax{
+    background-image: url(../img/cinema/sala-imax.jpg);
+
+}
+.vr{
+    background-image: url(../img/cinema/sala-vr.jpg);
+
+}
