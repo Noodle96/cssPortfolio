@@ -83,7 +83,35 @@ img {
     .header__logo{
         margin:0;
     }
+    .header__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        align-items: center;
+    }
 }
+.header__heading{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+@media (min-width: 768px){
+    .header__heading{
+        text-align: left;
+        font-size: 4rem;
+    }
+}
+@media (min-width: 768px){
+    .header__imagen{
+        max-width: 36rem;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
 .header__contenedor{
     max-width: 120rem;
     margin: 0 auto;
