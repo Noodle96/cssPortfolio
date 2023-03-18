@@ -137,7 +137,8 @@ img{
         align-items: flex-end
     }
 }
-.header a{
+.header a,
+.footer a{
     font-size: 2rem;
     color: var(--blanco);
 }
@@ -324,4 +325,25 @@ main >h2{
 .galeria .imagen:nth-child(6){
     grid-row: 2/4;
     grid-column: 1/2;
+}
+
+/* -------------------------------------------------------------------------- */
+                                /* FOOTER */
+.footer{
+    height: 50rem;
+    background-image: url(../img/cinema/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--blanco);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.copyright{
+    background-color: var(--negro);
+    margin: 5rem 0 0 0 ;
+    font-size: 2rem;
+    padding: 1rem;
 }
