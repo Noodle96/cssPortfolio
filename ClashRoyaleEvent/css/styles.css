@@ -31,6 +31,7 @@ h3 {
 }
 a {
     text-decoration: none;
+    color: var(--primario);
 }
 img {
     max-width: 100%;
@@ -53,7 +54,7 @@ img {
 }
 @media (min-width: 768px){
     .header{
-        background-size: 45rem;
+        background-size: 48rem;
     }
 }
 @media (min-width: 992px){
@@ -88,4 +89,23 @@ img {
     margin: 0 auto;
     width: 90%;
 }
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}
+.navegacion__link{
 
+}
+@media (min-width: 768px){
+    .navegacion__link{
+        color: var(--blanco);
+    }
+}
