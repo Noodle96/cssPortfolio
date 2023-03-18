@@ -145,6 +145,18 @@ img {
 .navegacion__link{
     color: var(--primario);
 }
+.navegacion__link:hover{
+    background-color: gainsboro;
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .navegacion__link:hover{
+        background-color: transparent;
+        width: auto;
+        /* text-align: left; */
+    }
+}
 @media (min-width: 768px){
     .navegacion__link{
         color: var(--blanco);
