@@ -41,3 +41,51 @@ img {
     margin: 0 auto;
     width: 90%;
 }
+
+/* ---------------------------------------------------------------- */
+/*                              HEADER */
+.header{
+    background-image: url(../img/cr/header_bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 5rem 0;
+    background-size: 25rem;
+}
+@media (min-width: 768px){
+    .header{
+        background-size: 45rem;
+    }
+}
+@media (min-width: 992px){
+    .header{
+        background-size: 60rem;
+    }
+}
+@media (min-width: 1280px){
+    .header{
+        background-size: 100rem;
+    }
+}
+
+@media (min-width: 768px){
+    .header__barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.header__logo{
+    width: 15rem;
+    margin: 0 auto 3rem auto;
+}
+@media (min-width: 768px){
+    .header__logo{
+        margin:0;
+    }
+}
+.header__contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
