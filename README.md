@@ -25,6 +25,7 @@
     - Galery Screen
     - Contact Screen -->
 - [Smart Glasses](#smart-glasses)
+- [Cinema](#cinema)
 
 # Entragos Store
 [(Back to top)](#table-of-contents)
@@ -76,4 +77,12 @@
 - Home Screen
 <p align="center">
   <img src='img/smart-glasses.png' width='800px' />
+</p>
+
+# Cinema
+[(Back to top)](#table-of-contents)
+- [Link Cinema Rooms](https://cinema-rooms.netlify.app/)
+- Home Screen
+<p align="center">
+  <img src='img/cinema.png' width='800px' />
 </p>
