@@ -1,4 +1,12 @@
 $colorRojo : blue;
+$colorGreen: green;
+$colorGris: #000000;
 body{
     background-color: $colorRojo;
+}
+h1{
+    background-color: $colorGreen;
+}
+h2{
+    background-color: $colorGris;
 }
