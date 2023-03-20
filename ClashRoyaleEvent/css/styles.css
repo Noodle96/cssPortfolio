@@ -308,3 +308,53 @@ img {
 .comisiones__imagen{
     max-width: 42rem;
 }
+/* -------------------------------------------------------------------- */
+                            /* SECCCION TESTIMONIALES */
+.testimoniales{
+    background-color: var(--primario);
+    padding: 5rem 0;
+}
+.testimoniales__heading{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;   
+}
+.testimoniales__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 768px){
+    .testimoniales__grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+.testimonial{
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0/.3);
+    padding: 2rem;
+    position: relative;
+}
+.testimonial__texto::before{
+    content: '';
+    background-image: url(../img/cr/comilla.png);
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 2rem;
+}
+.testimonial__texto{
+    padding-left: 4rem;
+}
+.testimonial__autor{
+    font-weight: 700;
+    color: var(--primario);
+    text-align: right;
+}
