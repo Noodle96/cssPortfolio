@@ -170,3 +170,15 @@ img {
     text-align: center;
     margin-bottom: 3rem;
 }
+.royale__grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px){
+    .royale__grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1rem;
+        align-items: center;
+    }
+}
