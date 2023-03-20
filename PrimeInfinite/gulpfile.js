@@ -1,0 +1,13 @@
+const {src,dest} = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+function css(done){
+    //COMPILAR SASS
+    // 1 IDENTIFICAR EL ARCHIVO SASS
+    // 2 COMPILAR ESE ARCHIVO
+    // 3 GUARDAR EL CSS
+    src('src/scss/app.scss')
+        .pipe(sass())
+        .pipe(dest('build/css'));
+    done();
+}
+exports.css = css;
