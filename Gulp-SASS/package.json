@@ -1,7 +1,7 @@
 {
-  "name": "primeinfinite",
+  "name": "glupsass",
   "version": "1.0.0",
-  "description": "This is a club template",
+  "description": "This is a glup-SASS template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,14 @@
   "author": "Russell Tito",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.59.3"
-  }
+  },
+  "browserlists":[
+    "last 1 version",
+    "> 1%"
+  ]
 }
