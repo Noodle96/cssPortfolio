@@ -199,10 +199,37 @@ img {
 .listado__elemento:hover{
     transform: scale(1.07);
 }
+.listado__elemento--2col{
+
+}
+@media (min-width: 768px){
+    .listado__elemento--2col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }   
+}
 .listado__heading{
     font-size: 3rem;
     color: var(--primario);
     margin: 0;
+}
+.listado__porcentaje{
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 900;
+    color: var(--primario);
+    text-align: center;
+}
+@media (min-width: 768px){
+    .listado__porcentaje{
+        flex-basis: 30rem;
+        text-align: right;
+        font-size: 4rem;
+    }
+    
 }
 .listado__text{
     margin: 0;
@@ -254,3 +281,30 @@ img {
 
 /* -------------------------------------------------------------------- */
                             /* SECCCION COMISIONES */
+.comisiones__heading{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+@media (min-width: 768px){
+    .comisiones__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem;
+        align-items: center;
+    }
+}
+.comisiones__texto{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+@media (min-width: 768px){
+    .comisiones__texto{
+        text-align: left;
+    }
+}
+.comisiones__imagen{
+    max-width: 42rem;
+}
