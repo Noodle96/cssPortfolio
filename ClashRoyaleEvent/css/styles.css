@@ -161,7 +161,12 @@ img {
         color: var(--blanco);
     }
 }
-
+.navegacion__link--blanco{
+    color: var(--blanco);
+}
+.navegacion__link--blanco:hover{
+    background-color: transparent;
+}
 /* -------------------------------------------------------------------- */
                             /* SECCCION QUE ES */
 .royale{
@@ -357,4 +362,34 @@ img {
     font-weight: 700;
     color: var(--primario);
     text-align: right;
+}
+
+/* -------------------------------------------------------------------- */
+                            /* SECCCION FOOTER */
+.footer{
+    background-color: #540cac;
+    padding: 5rem 0 1rem 0;
+}
+
+@media (min-width: 768px){
+    .footer__grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.footer__logo{
+    width: 10rem;
+    margin: 0 auto 4rem auto;
+}
+@media (min-width: 768px){
+    .footer__logo{
+        margin: 0;
+    }
+}
+.footer__copyright{
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
 }
