@@ -3,3 +3,11 @@ noglasses/
 noCinema/
 nocr/
 .DS_Store
+
+# Sass #
+###########
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+node_modules/
