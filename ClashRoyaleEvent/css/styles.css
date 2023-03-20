@@ -213,8 +213,31 @@ img {
                             /* SECCCION CARACTERISTICAS */
 .divertido{
     background-color: var(--primario);
-    padding: 10rem 0;
+    padding: 20rem 0;
+    position:relative;
+    margin-top: 10rem 0;
+    overflow:hidden;
 }
+.divertido::before,
+.divertido::after{
+    background-color: var(--blanco);
+    /* background-color: red; */
+    content: '';
+    height: 20rem;
+    width: 130%;
+    position: absolute;
+}
+.divertido::before{
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+.divertido::after{
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+
 .divertido__heading{
     text-align: center;
     margin-bottom: 5rem;
