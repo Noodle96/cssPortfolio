@@ -36,11 +36,12 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+[class$="__contenedor"]{
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
 }
+
 
 /* ---------------------------------------------------------------- */
 /*                              HEADER */
@@ -124,12 +125,6 @@ img {
     }
 }
 
-
-.header__contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
-}
 .navegacion{
     display: flex;
     flex-direction: column;
@@ -164,4 +159,14 @@ img {
     .navegacion__link{
         color: var(--blanco);
     }
+}
+
+/* -------------------------------------------------------------------- */
+                            /* SECCCION QUE ES */
+.royale{
+    margin-top: 1rem;
+}
+.royale__heading{
+    text-align: center;
+    margin-bottom: 3rem;
 }
