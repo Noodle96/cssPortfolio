@@ -1,6 +1,10 @@
 $colorRojo : blue;
 $colorGreen: green;
 $colorGris: #000000;
+$colorYellow: yellow;
+.contenedor{
+    margin: 0 auto;
+}
 body{
     background-color: $colorRojo;
 }
@@ -9,4 +13,8 @@ h1{
 }
 h2{
     background-color: $colorGris;
+}
+h3{
+    text-align: center;
+    color: yellow;
 }

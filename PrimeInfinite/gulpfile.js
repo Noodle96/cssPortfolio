@@ -6,7 +6,7 @@ function css(done){
     // 2 COMPILAR ESE ARCHIVO
     // 3 GUARDAR EL CSS
     src('src/scss/app.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(dest('build/css'));
     done();
 }
