@@ -1,3 +1,6 @@
+@use 'header/header';
+@use 'footer/footer';
+
 $colorRojo : blue;
 $colorGreen: green;
 $colorGris: #000000;
@@ -6,9 +9,9 @@ $colorOrange: orange;
 .contenedor{
     margin: 0 auto;
 }
-body{
-    background-color: $colorRojo;
-}
+// body{
+//     background-color: $colorRojo;
+// }
 // h1{
 //     background-color: $colorGreen;
 // }

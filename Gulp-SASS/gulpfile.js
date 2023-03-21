@@ -15,15 +15,17 @@ function css(done){
     //     "> 1%"
     //   ]
     src('src/scss/app.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
+        // .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass())
         .pipe(postcss([autoprefixer()]))
         .pipe(dest('build/css'));
     done();
 }
 function dev(){
-    watch('src/scss/app.scss', css);
+    watch('src/scss/**/*.scss',css);
+    // watch('src/scss/app.scss', css);
 }
 exports.css = css;
 exports.dev = dev;
-// exports.default = series(css,dev); // inicia las tareas serialmente
-exports.default = parallel(css,dev); // Inicia las tareas paralelamente
+exports.default = series(css,dev); // inicia las tareas serialmente
+// exports.default = parallel(css,dev); // Inicia las tareas paralelamente

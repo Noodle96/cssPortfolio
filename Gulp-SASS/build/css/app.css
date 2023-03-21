@@ -1,1 +1,16 @@
-.contenedor{margin:0 auto}body{background-color:blue}
+.header {
+  margin: 0 auto;
+}
+
+.header__heading {
+  padding: 4rem 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor {
+  margin: 0 auto;
+}
