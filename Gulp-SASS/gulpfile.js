@@ -1,7 +1,11 @@
 const {src,dest,watch,series, parallel} = require('gulp');
+// CSS Y SASS
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+
+//IMAGENES
+const imagemin = require('gulp-imagemin');
 
 function css(done){
     //COMPILAR SASS
@@ -23,6 +27,7 @@ function css(done){
 }
 function imagenes(done){
     src('src/img/**/*')
+        .pipe(imagemin({optimizationLevel:3}))
         .pipe(dest('build/img'));
     done();
 }
