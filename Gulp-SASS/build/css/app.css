@@ -349,3 +349,13 @@ p {
   color: #000000;
   font-size: 3rem;
 }
+
+/*--------------------------------------------------------------------------*/
+/*UTILIDADES*/
+.text-center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #E8505B;
+}
