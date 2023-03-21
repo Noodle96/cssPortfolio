@@ -1,10 +1,20 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 /*--------------------------------------------------------------------------*/
 /*HEADER*/
 .header{
     padding: v.$separacion 0;
     position: relative;
+    @include m.telefono{
+        text-align: left;
+    }
+    @include m.tablet{
+        text-align: center;
+    }
+    @include m.desktop{
+        text-align: right;
+    }
     &::before{
         content: '';
         background-color: v.$negro;
