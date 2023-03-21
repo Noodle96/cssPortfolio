@@ -1,0 +1,43 @@
+/* -------------------------------------------------------------------------- */
+                                /* GLOBALES */
+@use 'variables' as v;
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    font-size: inherit;
+}
+body{
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1,
+h2,
+h3{
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 1rem 0 2.5rem 0;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 5.8rem;
+}
+h3{
+    font-size: 5rem;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
