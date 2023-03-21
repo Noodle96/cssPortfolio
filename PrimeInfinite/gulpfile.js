@@ -28,7 +28,7 @@ function css(done){
     done();
 }
 function imagenes(done){
-    src('src/img/**/*')
+    src('src/img/club/**/*')
         .pipe(imagemin({optimizationLevel:3}))
         .pipe(dest('build/img/'));
     done();
@@ -53,12 +53,13 @@ function versionAvif(){
 
 function dev(){
     watch('src/scss/**/*.scss',css);
-    watch('src/img/**/*',imagenes);
+    watch('src/img/club/**/*',imagenes);
 }
 exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
-exports.versionWebp = versionWebp;
-exports.versionAvif = versionAvif;
-exports.default = series(imagenes, versionWebp, versionAvif, css,dev); // inicia las tareas serialmente
+// exports.versionWebp = versionWebp;
+// exports.versionAvif = versionAvif;
+// exports.default = series(imagenes, versionWebp, versionAvif, css,dev); // inicia las tareas serialmente
+exports.default = series(imagenes, css,dev); // inicia las tareas serialmente
 // exports.default = parallel(css,dev); // Inicia las tareas paralelamente
