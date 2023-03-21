@@ -1,5 +1,7 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
+/*--------------------------------------------------------------------------*/
+/*CONTENIDO*/
 .contenido-principal{
     background-color: v.$grisClaro;
     padding: 3rem;
