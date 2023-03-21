@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 .contenido-principal{
     background-color: v.$grisClaro;
-    padding: 2rem;
+    padding: 3rem;
     @include m.tablet{
         padding: 10rem;
         margin-top: -10rem;
