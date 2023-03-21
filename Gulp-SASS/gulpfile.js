@@ -21,11 +21,18 @@ function css(done){
         .pipe(dest('build/css'));
     done();
 }
+function imagenes(done){
+    src('src/img/**/*')
+        .pipe(dest('build/img'));
+    done();
+}
 function dev(){
     watch('src/scss/**/*.scss',css);
+    watch('src/img/**/*',imagenes);
     // watch('src/scss/app.scss', css);
 }
 exports.css = css;
 exports.dev = dev;
-exports.default = series(css,dev); // inicia las tareas serialmente
+exports.imagenes = imagenes;
+exports.default = series(imagenes,css,dev); // inicia las tareas serialmente
 // exports.default = parallel(css,dev); // Inicia las tareas paralelamente
