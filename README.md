@@ -34,43 +34,8 @@
 <!-- #### Navbar and Hero Home Screen -->
 - Navbar and Hero Home Screen
 <p align="center">
-  <img src='img/inicio_01.png' width='800px' />
+  <img src='img/entragosStore.png' width='800px' />
 </p>
-
-<!-- - Product Category and About Us Home Screen
-<p align="center">
-  <img src='img/inicio_02.png' width='800px' />
-</p>
-
-- Our Products Home Screen
-<p align="center">
-  <img src='img/inicio_03.png' width='800px' />
-</p>
-
-- Footer Home Screen
-<p align="center">
-  <img src='img/inicio_04.png' width='800px' />
-</p>
-
-- About Us Screen
-<p align="center">
-  <img src='img/nosotros.png' width='800px' />
-</p>
-
-- Our Blog Screen
-<p align="center">
-  <img src='img/blog.png' width='800px' />
-</p>
-
-- Galery Screen
-<p align="center">
-  <img src='img/galeria.png' width='800px' />
-</p>
-
-- Contact Screen
-<p align="center">
-  <img src='img/contacto.png' width='500px' />
-</p> -->
 
 # Smart Glasses
 [(Back to top)](#table-of-contents)
