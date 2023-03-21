@@ -12,22 +12,7 @@ body{
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
     // line-height: 1.5;
-}
-h1,
-h2,
-h3{
-    // font-weight: 900;
-    // line-height: 1.2;
-    margin: 0 0 v.$separacion 0;
-}
-h1{
-    font-size: 3.5rem;
-}
-h2{
-    font-size: 3.6rem;
-}
-h3{
-    font-size: 3.2rem;
+    background-color: v.$cafeClaro;
 }
 a{
     text-decoration: none;
@@ -44,5 +29,6 @@ img{
 // AJUSTACIONES PERSONALES
 p{
     color: v.$negro;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    line-height: 2;
 }

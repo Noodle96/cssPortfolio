@@ -1,0 +1,21 @@
+@use 'variables' as v;
+h1,
+h2,
+h3{
+    // font-weight: 900;
+    // line-height: 1.2;
+    font-family: v.$fuentePrincipal;
+    margin: 0 0 v.$separacion 0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height:1.5;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3.2rem;
+}
