@@ -24,5 +24,9 @@
         &:hover{
             color: v.$secundario;
         }
+        &.activo{
+            color: v.$secundario;
+        }
+
     }
 }

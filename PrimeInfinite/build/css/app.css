@@ -319,7 +319,7 @@ h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -370,6 +370,11 @@ p {
 }
 @media (min-width: 768px) {
   .header {
+    min-height: 60rem;
+  }
+}
+@media (min-width: 768px) {
+  .header {
     background-position: center center;
   }
 }
@@ -386,13 +391,23 @@ p {
 .header .contenido-header {
   position: relative;
 }
+.header .contenido-header h1 {
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header h1 {
+    margin-top: 10rem;
+  }
+}
+.header .contenido-header h1 span {
+  color: #f3e567;
+}
 
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
-}
-
-.texto-header {
-  color: #FFFFFF;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -423,7 +438,10 @@ p {
   }
 }
 .nav-principal a:hover {
-  color: #C39C63;
+  color: #f3e567;
+}
+.nav-principal a.activo {
+  color: #f3e567;
 }
 
 /*--------------------------------------------------------------------------*/
