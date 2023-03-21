@@ -38,3 +38,23 @@ command => user Snippets
 			"</picture>"
 		]
 	}
+
+
+"media query telefono":{
+        "prefix": "mqtel",
+        "body": [
+            "@include m.telefono{\n\t$1\n}"
+        ]
+    },
+    "media query tablet":{
+        "prefix": "mqtab",
+        "body": [
+            "@include m.tablet{\n\t$1\n}"
+        ]
+    },
+    "media query desktop":{
+        "prefix": "mqdes",
+        "body": [
+            "@include m.desktop{\n\t$1\n}"
+        ]
+    }
