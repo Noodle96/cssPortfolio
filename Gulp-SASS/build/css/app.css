@@ -310,27 +310,24 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 900;
-  line-height: 1.2;
-  margin: 1rem 0 2.5rem 0;
+  margin: 0 0 5rem 0;
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 5.8rem;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 3.2rem;
 }
 
 a {
@@ -345,5 +342,10 @@ img {
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
+}
+
+p {
+  color: #000000;
+  font-size: 3rem;
 }
