@@ -6,15 +6,13 @@
 .header{
     padding: v.$separacion 0;
     position: relative;
-    @include m.telefono{
-        text-align: left;
-    }
+    background-position: right bottom;
+    background-size: cover;
+
     @include m.tablet{
-        text-align: center;
+        background-position: center center;    
     }
-    @include m.desktop{
-        text-align: right;
-    }
+    
     &::before{
         content: '';
         background-color: v.$negro;
