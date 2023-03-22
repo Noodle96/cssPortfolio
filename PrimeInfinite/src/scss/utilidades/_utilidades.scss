@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------------*/
-                                /*UTILIDADES*/
-@use 'variables' as v;
+/*UTILIDADES*/
+@use '../base/variables' as v;
 .text-center{
     text-align: center;
 }
@@ -9,4 +9,10 @@
 }
 .bg-color-white{
     background-color: v.$grisClaro;
+}
+.padding-bottom-0{
+    padding-bottom: 0;
+}
+.margin-negativo{
+    margin-top: -10rem;
 }

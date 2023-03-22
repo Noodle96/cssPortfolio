@@ -36,3 +36,10 @@
     padding: 2rem;
     color: v.$blanco;
 }
+.footer-with-margin-negativo{
+    // margin-top: -10rem;
+    @extend .footer;
+    @extend .footer-box;
+    @extend .copyright;
+    // background-color: yellow;
+}

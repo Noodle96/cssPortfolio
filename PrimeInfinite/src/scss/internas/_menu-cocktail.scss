@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+/*--------------------------------------------------------------------------*/
+/*MENU COCKTAILS*/
+.contenido-cocktail{
+    // background-image: url(../img/liquor.jpg);
+    // background-repeat: no-repeat;
+    // background-size: 100%;
+    // background-position: center top;
+    @include m.desktop{
+        @include m.grid(2,v.$separacion);
+    }
+    img{
+        border-radius: 50% 20% / 10% 40%;
+    }
+    .texto{
+        p{
+            font-size: 1.8rem;
+        }
+    }
+}

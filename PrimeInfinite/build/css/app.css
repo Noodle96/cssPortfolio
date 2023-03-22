@@ -389,20 +389,6 @@ h3 {
 }
 
 /*--------------------------------------------------------------------------*/
-/*UTILIDADES*/
-.text-center {
-  text-align: center;
-}
-
-.bg-primario {
-  background-color: #9847e9;
-}
-
-.bg-color-white {
-  background-color: #eceeef;
-}
-
-/*--------------------------------------------------------------------------*/
 /*HEADER*/
 .header {
   padding: 5rem 0;
@@ -734,46 +720,50 @@ h3 {
 
 /*--------------------------------------------------------------------------*/
 /*FOOTER*/
-.footer {
+.footer, .footer-with-margin-negativo {
   background-color: #9847e9;
 }
-.footer .contenido-footer {
+.footer .contenido-footer, .footer-with-margin-negativo .contenido-footer {
   padding: 10rem;
 }
 @media (min-width: 768px) {
-  .footer .contenido-footer {
+  .footer .contenido-footer, .footer-with-margin-negativo .contenido-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 }
 
-.footer-box {
+.footer-box, .footer-with-margin-negativo {
   font-family: "Bona Nova", serif;
   text-align: center;
   margin-bottom: 5rem;
 }
 @media (min-width: 768px) {
-  .footer-box {
+  .footer-box, .footer-with-margin-negativo {
     margin-bottom: 0;
   }
 }
-.footer-box h3 {
+.footer-box h3, .footer-with-margin-negativo h3 {
   font-family: "Bona Nova", serif;
   margin: 0 0 1rem 0;
   font-size: 2.4rem;
   color: #cf1a4b;
 }
-.footer-box p, .footer-box a {
+.footer-box p, .footer-with-margin-negativo p, .footer-box a, .footer-with-margin-negativo a {
   font-size: 1.8rem;
   margin: 0;
 }
 
-.copyright {
+.copyright, .footer-with-margin-negativo {
   text-align: center;
   margin: 0;
   padding: 2rem;
   color: #FFFFFF;
+}
+
+.footer-with-margin-negativo {
+  margin-top: -10rem;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -857,4 +847,42 @@ h3 {
   width: 50%;
   height: 4px;
   background-color: #cf1a4b;
+}
+
+/*--------------------------------------------------------------------------*/
+/*MENU COCKTAILS*/
+@media (min-width: 1024px) {
+  .contenido-cocktail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.contenido-cocktail img {
+  border-radius: 50% 20%/10% 40%;
+}
+.contenido-cocktail .texto p {
+  font-size: 1.8rem;
+}
+
+/*--------------------------------------------------------------------------*/
+/*UTILIDADES*/
+.text-center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #9847e9;
+}
+
+.bg-color-white {
+  background-color: #eceeef;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.margin-negativo {
+  margin-top: -10rem;
 }
