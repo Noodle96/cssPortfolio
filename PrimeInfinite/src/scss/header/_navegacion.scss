@@ -8,7 +8,7 @@
     margin-top: 3rem;
     @include m.tablet{
         flex-direction: row;
-        gap: 2rem;
+        gap: 4rem;
         margin-top: 0;
     }
     a{

@@ -11,8 +11,8 @@
     background-size: 200%;
     padding: 15rem 5rem 20rem 5rem;
     @include m.tablet{
-        padding: 15rem 0 20rem 0;
-        background-size: 80%;
+        padding: 15rem 10rem 20rem 10rem;
+        background-size: 100%;
     }
     @include m.desktop{
         background-size: 50%, 40%, 100%;

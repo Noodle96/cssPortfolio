@@ -23,7 +23,7 @@ function css(done){
     src('src/scss/app.scss')
         // .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sass())
-        .pipe(postcss([autoprefixer()]))
+        // .pipe(postcss([autoprefixer()]))
         .pipe(dest('build/css'));
     done();
 }

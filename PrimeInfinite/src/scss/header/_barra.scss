@@ -6,7 +6,7 @@
     flex-direction: column;
     @include m.tablet{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .logo{

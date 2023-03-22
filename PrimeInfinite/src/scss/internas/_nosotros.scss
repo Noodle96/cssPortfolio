@@ -1,0 +1,36 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*--------------------------------------------------------------------------*/
+/*INTERNAS NOSOSTROS*/
+.contenido-nosotros{
+    @include m.desktop{
+        @include m.grid(2,2rem);
+        justify-items: center;
+    }
+    .imagen{
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        @include m.desktop{
+            margin-bottom: 0;
+        }
+        img{
+            transform: rotate(-6deg);
+            border: 3rem solid v.$blanco;
+            box-shadow: 9px 10px 5px -7px rgb(0 0 0 /.35);
+            width: 24rem;
+            @include m.tablet{
+                width: 30rem;
+            }
+        }
+    }
+    .text{
+        blockquote{
+            margin: 0;
+            padding: 1rem;
+            border-left: .5rem solid v.$primario;
+            font-size:2rem ;
+
+        }
+    }
+}
