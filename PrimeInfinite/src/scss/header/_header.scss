@@ -7,6 +7,7 @@
     padding: v.$separacion 0;
     position: relative;
     background-position: right bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     @include m.tablet{
         min-height: 60rem;
@@ -47,4 +48,7 @@
 }
 .header-inicio{
     background-image: url(../img/header_inicio.jpg);
+}
+.header-nosotros{
+    background-image: url(../img/header_nosotros.jpg);
 }

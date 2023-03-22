@@ -6,7 +6,7 @@
     background-color: v.$primario;
     .contenido-footer{
         // background-color: v.$grisClaro;
-        padding: 8rem;
+        padding: 10rem;
         @include m.tablet{
             @include m.grid(3, 2rem);
         }

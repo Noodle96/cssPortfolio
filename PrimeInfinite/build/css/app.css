@@ -320,6 +320,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -409,6 +410,7 @@ h3 {
   padding: 5rem 0;
   position: relative;
   background-position: right bottom;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -454,6 +456,10 @@ h3 {
 
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
+}
+
+.header-nosotros {
+  background-image: url(../img/header_nosotros.jpg);
 }
 
 /*--------------------------------------------------------------------------*/
@@ -736,7 +742,7 @@ h3 {
   background-color: #9847e9;
 }
 .footer .contenido-footer {
-  padding: 8rem;
+  padding: 10rem;
 }
 @media (min-width: 768px) {
   .footer .contenido-footer {
