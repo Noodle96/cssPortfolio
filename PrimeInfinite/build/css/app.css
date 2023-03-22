@@ -644,9 +644,9 @@ h3 {
 /*--------------------------------------------------------------------------*/
 /*MENU*/
 .our-coktails {
-  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #9847e9, #9847e9);
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #cf1a4b, #cf1a4b);
   background-repeat: no-repeat;
-  background-position: center 5rem, center 92%, 100%;
+  background-position: center 5rem, center 96%, 100%;
   background-size: 200%;
   padding: 15rem 5rem 20rem 5rem;
 }
@@ -660,4 +660,36 @@ h3 {
   .our-coktails {
     background-size: 50%, 50%, 100%;
   }
+}
+
+@media (min-width: 768px) {
+  .grid-cocktail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+.cocktail h3 {
+  color: #FFFFFF;
+}
+.cocktail li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cocktail li p {
+  color: #eceeef;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin: 0 0 2rem 0;
+}
+.cocktail li p span {
+  display: block;
+  color: #56145b;
+  font-weight: 900;
+}
+.cocktail li .precio {
+  font-size: 3.1rem;
+  font-weight: 700;
 }
