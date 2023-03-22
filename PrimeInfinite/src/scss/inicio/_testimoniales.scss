@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/*--------------------------------------------------------------------------*/
+/*TESTIMONIALES*/
+.nuestros-testimoniales {
+    background-color: v.$grisClaro;
+    padding: 10rem 2rem;
+    @include m.tablet{
+        padding: 10rem;
+        margin-top: -6rem;
+        // position: relative;
+    }
+    .testimonial{
+        background-color: v.$cafeClaro;
+        padding: 2rem 4rem;
+        margin: 0 auto;
+        // max-width: 50rem;// esto sin mq
+        border-radius: 1rem;
+        @include m.tablet{
+            width: 50%;
+        }
+        .author{
+            text-align: right;
+            font-size: 2.4rem;
+            font-family: v.$fuenteCursiva;
+            color: v.$primario;
+            font-weight: 700;
+        }
+    }
+}
