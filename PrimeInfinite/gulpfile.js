@@ -3,6 +3,7 @@ const {src,dest,watch,series, parallel} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 
 //IMAGENES
 const imagemin = require('gulp-imagemin');
