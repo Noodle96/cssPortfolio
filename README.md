@@ -27,6 +27,7 @@
 - [Smart Glasses](#smart-glasses)
 - [Cinema](#cinema)
 - [Clash Royale Final World](#clash-royale-final-world)
+- [Prime Infinite](#prime-infinite)
 
 # Entragos Store
 [(Back to top)](#table-of-contents)
@@ -60,4 +61,13 @@
 - Home Screen
 <p align="center">
   <img src='img/clashRoyaleFinalWorld.png' width='800px' />
+</p>
+
+# Prime Infinite
+[(Back to top)](#table-of-contents)
+- [Link Prime Infinite](https://prime-infinite.netlify.app/)
+<!-- #### Navbar and Hero Home Screen -->
+- Home Screen
+<p align="center">
+  <img src='img/primeInfinite.png' width='800px' />
 </p>
