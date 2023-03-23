@@ -454,6 +454,14 @@ h3 {
   background-image: url(../img/header-cocktail.webp);
 }
 
+.header-galeria {
+  background-image: url(../img/header_galeria.webp);
+}
+
+.header-contacto {
+  background-image: url(../img/header_contacto.jpg);
+}
+
 /*--------------------------------------------------------------------------*/
 /*NAVEGACION*/
 .nav-principal {
@@ -760,10 +768,6 @@ h3 {
   margin: 0;
   padding: 2rem;
   color: #FFFFFF;
-}
-
-.footer-with-margin-negativo {
-  margin-top: -10rem;
 }
 
 /*--------------------------------------------------------------------------*/

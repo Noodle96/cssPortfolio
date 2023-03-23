@@ -11,7 +11,7 @@
     <title>Prime Infinite</title>
 </head>
 <body>
-    <header class="header header-galeria">
+    <header class="header header-contacto">
         <div class="contenido-header contenedor">
             <div class="barra">
                 <div class="logo">
@@ -24,50 +24,52 @@
                     <a href="nosotros.html">Nosotros</a>
                     <a href="proceso.html">Proceso</a>
                     <a href="menu.html">Menú</a>
-                    <a class="activo" href="galeria.html">Galería</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="galeria.html">Galería</a>
+                    <a class="activo" href="contacto.html">Contacto</a>
                 </nav>
             </div><!-- END BARRA -->
             <div class="texto-header">
-                <h1><span2>Aprovecha</span2> de los distintos <span>Eventos</span></h1>
+                <h1><span2>Reserva </span2> un square <span>Personalizado</span></h1>
             </div>
         </div>
     </header>
-
+    <!-- LABEL:for ---- INPUT:id -->
     <main class="contenedor contenido-principal">
-        <h2><span>Vive la</span> Experiencia</h2>
-            <div class="galeria">
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_01.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_02.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_03.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_04.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_05.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_06.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_07.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_08.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_09.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-                <div class="imagen">
-                    <img src="build/img/galeria/pi_10.jpg" alt="imagen galeria">
-                </div><!-- END IMAGEN -->
-            </div><!-- END GALERIA -->
+        <h2><span>Reserva tu</span>Square</h2>
+        <div class="contenido-contacto">
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Tu Email">
+                </div>
+                <div class="campo">
+                    <label for="email">Número de Personas:</label>
+                    <select name="" id="">
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value=4">4</option>
+                        <option value="mas">+4</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora">
+                </div>
+                <div class="campo">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha">
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
     </main>
 
     
