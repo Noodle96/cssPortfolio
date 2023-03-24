@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/* ------------------------------------------------------------------ */
+/*REPARTIDORES*/
+.repartidores{
+    padding: v.$separacion 0;
+    &__heading{
+        text-align: center;
+        color: v.$secundario;
+    }
+    &__grid{
+        @include m.tablet{
+            @include m.grid(2,v.$separacion);
+        }
+    }
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    &__texto{
+        line-height: 1.1;
+        color: v.$secundario;
+        font-size: 1.9rem
+    }
+    &__enlace{
+        @include m.boton(v.$primario,v.$blanco);
+    }
+}
