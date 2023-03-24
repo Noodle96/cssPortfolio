@@ -790,6 +790,65 @@ h3 {
 }
 
 /* ------------------------------------------------------------------ */
+/*DESCARGAR*/
+.descargar {
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .descargar__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.descargar__imagen {
+  width: 50%;
+  margin: 0 auto;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+}
+.descargar__imagen:hover {
+  -webkit-transform: rotate(4deg) scale(1.1);
+          transform: rotate(4deg) scale(1.1);
+}
+
+/* ------------------------------------------------------------------ */
+/*TIENDA*/
+.tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tiendas__heading {
+  color: #455a64;
+  margin: 2rem 0 0 0;
+}
+.tiendas__texto {
+  margin-bottom: 3rem;
+}
+.tiendas__heading, .tiendas__texto {
+  text-align: center;
+}
+.tiendas__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tiendas__enlace {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.5s;
+}
+.tiendas__enlace:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+/* ------------------------------------------------------------------ */
 /*UTILIDADES*/
 .text-center {
   text-align: center;
