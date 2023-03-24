@@ -56,3 +56,21 @@
     background-size: cover;
     background-position: top center;
 }
+
+@mixin headingBorder($colorTexto, $colorLinea){
+    font-size: 3.2rem;
+    display: inline-block;
+    margin-top: 4rem;
+    color: $colorTexto;
+    @include tablet{
+        margin-top: 0;    
+    }
+    &::after{
+        content: '';
+        background-color: $colorLinea;
+        height: .5rem;
+        width: 103%;
+        display: block;
+        margin: -1rem 0 0 0;
+    }
+}

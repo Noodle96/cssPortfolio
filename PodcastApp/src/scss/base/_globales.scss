@@ -39,22 +39,7 @@ h1, h2, h3 {
 h1 {
     font-size: 4rem;
 }
-h2{
-    font-size: 3.2rem;
-    margin-top: 4rem;
-    color: v.$secundario;
-    @include m.tablet{
-        margin-top: 0;    
-    }
-    &::after{
-        content: '';
-        background-color: v.$primario;
-        height: .5rem;
-        display: block;
-        margin: -1rem 0 0 0;
-        width: 103%;
-    }
-}
+
 h3 {
     font-size: 2.8rem;
     text-align: center;
