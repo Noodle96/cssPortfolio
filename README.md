@@ -8,11 +8,6 @@
 ![no-yellow-team](img/badges/certified-by-russell.svg)
 ![no-yellow-team](img/badges/powered-by-russell.svg)
 
-
-
-
-
-
 # Table of contents
 
 - [Entragos Store](#entragos-store)
@@ -28,6 +23,7 @@
 - [Cinema](#cinema)
 - [Clash Royale Final World](#clash-royale-final-world)
 - [Prime Infinite](#prime-infinite)
+- [Delivery App](#delivery-app)
 
 # Entragos Store
 [(Back to top)](#table-of-contents)
@@ -70,4 +66,13 @@
 - Home Screen
 <p align="center">
   <img src='img/primeInfinite.png' width='800px' />
+</p>
+
+# Delivery App
+[(Back to top)](#table-of-contents)
+- [Link Delivery App](https://delivery-comida.netlify.app/)
+<!-- #### Navbar and Hero Home Screen -->
+- Home Screen
+<p align="center">
+  <img src='img/appComida.png' width='800px' />
 </p>
