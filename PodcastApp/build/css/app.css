@@ -434,6 +434,32 @@ ul {
 }
 
 /* ------------------------------------------------------------------ */
+/*BENEFICIOS*/
+.beneficios {
+  background-color: #84d9bc;
+}
+@media (min-width: 768px) {
+  .beneficios__grid {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+  }
+}
+.beneficios__contenido {
+  grid-column: 1/4;
+}
+.beneficios__imagen {
+  grid-column: 4/6;
+  transition-property: rotate scale;
+  transition-duration: 0.7s;
+}
+.beneficios__imagen:hover {
+  -webkit-transform: rotate(8deg) scale(1.1);
+          transform: rotate(8deg) scale(1.1);
+}
+
+/* ------------------------------------------------------------------ */
 /*BOTONES*/
 .boton-primario {
   background-color: #84d9bc;
