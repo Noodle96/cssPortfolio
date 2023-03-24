@@ -1,0 +1,10 @@
+@use '../base/variables' as v; 
+/* ------------------------------------------------------------------ */
+/*UTILIDADES*/
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: v.$primario;
+}
