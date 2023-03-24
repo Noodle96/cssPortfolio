@@ -656,6 +656,26 @@ h3 {
 }
 
 /* ------------------------------------------------------------------ */
+/*FAVORITO*/
+/* ------------------------------------------------------------------ */
+/*FAVORITOS*/
+.favoritos {
+  padding: 5rem 0;
+  background-color: #eceeef;
+}
+.favoritos__heading {
+  text-align: center;
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .favoritos__grid {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /*UTILIDADES*/
 .text-center {
   text-align: center;
