@@ -1,4 +1,5 @@
 @use '../base/variables' as v; 
+@use '../base/mixins' as m; 
 
 .text-center {
     text-align: center;
@@ -6,4 +7,10 @@
 
 .bg-primario {
     background-color: v.$primario;
+}
+.seccion{
+    padding: 3rem 0;
+    @include m.tablet{
+        padding: 6rem 0;
+    }
 }
