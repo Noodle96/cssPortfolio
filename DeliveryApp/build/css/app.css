@@ -657,6 +657,69 @@ h3 {
 
 /* ------------------------------------------------------------------ */
 /*FAVORITO*/
+.favorito {
+  background-color: #FFFFFF;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 2.6rem -0.8rem #1f2224;
+  border-radius: 1rem;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+}
+.favorito:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+.favorito:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .favorito {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .favorito__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+.favorito__imagen {
+  max-width: 20rem;
+  margin: 0 auto 2rem auto;
+}
+.favorito__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .favorito__contenido {
+    align-items: flex-start;
+  }
+}
+.favorito__nombre {
+  margin: 1rem 0;
+  color: #e8505b;
+  font-size: 2.4rem;
+}
+.favorito__descripcion {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .favorito__descripcion {
+    text-align: left;
+  }
+}
+
 /* ------------------------------------------------------------------ */
 /*FAVORITOS*/
 .favoritos {
