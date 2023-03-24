@@ -9,9 +9,19 @@
     align-items: center;
     @include m.tablet{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     &__logo{
         width: 30rem;
+        margin-bottom: v.$separacion;
+        @include m.tablet{
+            margin-bottom: 0;
+        }
+        @include m.tablet{
+            width: 15rem;
+        }@include m.desktop{
+            width: 30rem;
+        }
     }
+    
 }
