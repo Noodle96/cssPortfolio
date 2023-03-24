@@ -20,7 +20,29 @@
             <a href="#" class="navegacion__link">registrarse</a>
             <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurant</a>
         </nav>
-    </header>
+    </header><!-- END HEADER -->
     
+    <section class="formulario contenedor">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2>Encuentra y pide comida de tu restaurante favorito</h2>
+                <form class="formulario__buscar" action="">
+                    <div class="formulario__campo">
+                        <label for="restaurant" class="formulario__label">Restaurant</label>
+                        <input id="restaurant" type="text" class="formulario__input" placeholder="San Camilo 202">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="platillo" class="formulario__label">Platillo</label>
+                        <input id="platillo" type="text" class="formulario__input" placeholder="Chaufainita">
+                    </div>
+                    <input type="submit"class="formulario__submit" value="Buscar">
+                </form>
+            </div>
+            <div class="formulario__imagen">
+                <img src="build/img/dibujo_repartidor.svg" alt="">
+            </div>
+        </div>
+
+    </section>
 </body>
 </html>
