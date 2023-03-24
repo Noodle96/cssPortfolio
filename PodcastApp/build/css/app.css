@@ -169,13 +169,6 @@ select { /* 1 */
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -255,11 +248,6 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
@@ -361,6 +349,74 @@ h3 {
 ul {
   padding: 0;
   list-style: none;
+}
+
+/* ------------------------------------------------------------------ */
+/*HEADER*/
+.header {
+  background-image: linear-gradient(rgba(57, 70, 89, 0.7) 0%, rgba(57, 70, 89, 0.7) 100%), url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 5rem 0;
+}
+.header__logo {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    margin: 0;
+  }
+}
+.header__contenido {
+  padding: 10rem 0;
+}
+@media (min-width: 1024px) {
+  .header__contenido {
+    padding: 15rem 0;
+  }
+}
+.header__heading {
+  color: #FFFFFF;
+  font-size: 3.8rem;
+}
+@media (min-width: 768px) {
+  .header__heading {
+    font-size: 4.5rem;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .header__heading {
+    max-width: 37%;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*BOTONES*/
+.boton-primario {
+  background-color: #84d9bc;
+  font-size: 2rem;
+  padding: 1.2rem 4rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #313c4e;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.boton-primario:hover {
+  cursor: pointer;
+  background-color: #5dcda7;
+}
+@media (min-width: 768px) {
+  .boton-primario {
+    width: auto;
+    display: inline-block;
+  }
 }
 
 .text-center {
