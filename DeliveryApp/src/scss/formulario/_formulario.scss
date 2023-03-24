@@ -3,6 +3,7 @@
 /* ------------------------------------------------------------------ */
 /*FORMULARIO*/
 .formulario{
+    margin-top: .1rem;
     &__grid{
         @include m.tablet{
             @include m.grid(2,v.$separacion);
