@@ -1,0 +1,79 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/* ------------------------------------------------------------------ */
+/*PLANES*/
+.planes{
+    background-color: v.$secundario;
+    &__heading{
+        @include m.headingBorder(v.$blanco,v.$primario);
+    }
+    &__descripcion{
+        color: v.$blanco;
+        line-height: 1.3;
+        font-size: 1.8rem;
+    }
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        @include m.desktop{
+            flex-direction: row;
+            max-width: 70%;
+            // margin: 10rem auto 0 auto;
+            margin-inline: auto;
+            margin-block-start: 10rem;
+        }
+    }
+    &__plan{
+        border-bottom: 1px solid #e1e1e1;
+        @include m.desktop{
+            border-bottom: unset
+        }
+        flex-grow: 1;
+        background-color: v.$blanco;
+        padding: 16rem 4rem 4rem 4rem;
+        @include m.desktop{
+            border: none;
+            transition-property: transform;
+            transition-duration: .3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .precio{
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .listado{
+            li{
+                text-align: center;
+                margin-bottom: 2rem;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &.inicio{
+            @include m.iconoBg('../img/icono_inicio.svg');
+        }
+        &.negocio{
+            order: -1;
+            background-color: v.$primario;
+            @include m.iconoBg('../img/icono_negocio.svg');
+
+            @include m.desktop{
+                order:unset;
+                margin: -5rem 0 -5rem 0; //para que sobresalga
+                border-radius: 2rem;
+                background-position: 50% 7rem;
+                padding-top: calc(16rem + 5rem);
+                z-index: 100;
+            }
+        }
+        &.pro{
+            @include m.iconoBg('../img/icono_pro.svg');
+        }
+        
+    }
+}

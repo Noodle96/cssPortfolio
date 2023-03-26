@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/* ------------------------------------------------------------------ */
+/*ESTADICTICA*/
+.estadistica{
+    &__heading{
+        @include m.headingBorder(v.$secundario,v.$primario);
+    }
+    &__texto{
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+}

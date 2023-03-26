@@ -5,3 +5,13 @@
 .boton-primario{
     @include m.boton(v.$primario,v.$secundario);
 }
+.boton-plan{
+    @include m.boton(v.$primario,v.$secundario);
+    border: 1.5px solid v.$blanco;
+    margin-top: 2rem;
+    @include m.tablet{
+        display:block;
+    }
+
+    // margin: 2rem auto 0 auto;
+}

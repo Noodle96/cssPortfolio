@@ -57,8 +57,18 @@
     background-position: top center;
 }
 
+@mixin iconoBg($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+}
+
 @mixin headingBorder($colorTexto, $colorLinea){
-    font-size: 3.2rem;
+    font-size: 2.3rem;
+    @include tablet{
+        font-size: 3.6rem;
+    }
     display: inline-block;
     margin-top: 4rem;
     color: $colorTexto;
