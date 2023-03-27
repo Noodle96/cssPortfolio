@@ -17,6 +17,7 @@
 - [Prime Infinite](#prime-infinite)
 - [Delivery App](#delivery-app)
 - [Podcast FM](#podcast-app)
+- [Traveling Fast](#traveling-fast)
 
 
 # Entragos Store
@@ -79,3 +80,11 @@
 <p align="center">
   <img src='img/podcast.png' width='800px' />
 </p>
+
+# Traveling Fast
+[(Back to top)](#table-of-contents)
+- [Traveling Fast App](https://traveling-fast.netlify.app/)
+<!-- #### Navbar and Hero Home Screen -->
+- Home Screen
+<p align="center">
+  <img src='img/airbnb.png' width='800px' />
