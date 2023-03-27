@@ -370,6 +370,10 @@ a {
   text-decoration: none;
 }
 
+[class$=__heading] {
+  margin: 2rem 0;
+}
+
 /*---------------------------------------------------------*/
 /*HEADER*/
 .header {
@@ -493,5 +497,47 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+/*---------------------------------------------------------*/
+/*DESTINOS*/
+.destinos__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .destinos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .destinos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.destino {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.destino__imagen {
+  width: 12rem;
+  height: 12rem;
+}
+.destino__nombre {
+  margin: 0;
+}
+.destino__distancia {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #e8505b;
+  font-weight: 700;
 }
 /*# sourceMappingURL=app.css.map */
