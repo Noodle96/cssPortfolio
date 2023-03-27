@@ -717,4 +717,55 @@ a {
     display: inline-block;
   }
 }
+
+/*---------------------------------------------------------*/
+/*FOOTER*/
+.footer {
+  background-color: #eeeeee;
+  border-top: 1px solid #cecece;
+  padding-top: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .footer__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.footer__enlace {
+  display: block;
+  color: #686868;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.footer__barra {
+  border-top: 1px solid #cecece;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.footer__barranav {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer__barranav {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.footer__enlace--barra::before {
+  content: " - ";
+  margin-right: 0.3rem;
+}
 /*# sourceMappingURL=app.css.map */
