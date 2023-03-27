@@ -557,6 +557,9 @@ a {
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
 }
+.lugares__grid > * {
+  scroll-snap-align: center;
+}
 @media (min-width: 1024px) {
   .lugares__grid {
     overflow: auto;
@@ -566,9 +569,6 @@ a {
   }
 }
 
-.lugar {
-  scroll-snap-align: center;
-}
 .lugar__grid {
   display: flex;
   flex-direction: row;
@@ -647,6 +647,73 @@ a {
 }
 @media (min-width: 768px) {
   .anfitrion__enlace {
+    display: inline-block;
+  }
+}
+
+/*---------------------------------------------------------*/
+/*EXPERIENCIAS*/
+.experiencias__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+.experiencias__grid > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 1024px) {
+  .experiencias__grid {
+    overflow: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.experiencia__imagen {
+  border-radius: 1rem;
+}
+.experiencia__comunicacion {
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: row;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.experiencia__reaccion {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+}
+.experiencia__iconos {
+  width: 3rem;
+}
+.experiencia__enlace {
+  background-color: #e8505b;
+  padding: 2rem 4rem;
+  color: #FFFFFF;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  padding: 0.3rem 3rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .experiencia__enlace {
     display: inline-block;
   }
 }
