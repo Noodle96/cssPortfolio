@@ -46,6 +46,6 @@
     }
     &__enlace{
         @include m.boton(v.$blanco, v.$primario);
-        
+        border-radius: 1rem;
     }
 }

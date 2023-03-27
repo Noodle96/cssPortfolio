@@ -643,6 +643,7 @@ a {
   font-size: 2rem;
   font-weight: 700;
   display: block;
+  border-radius: 1rem;
 }
 @media (min-width: 768px) {
   .anfitrion__enlace {
