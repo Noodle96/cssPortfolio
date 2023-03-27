@@ -12,17 +12,29 @@
         //     @include m.grid(2,2rem);
         // }
         @include m.desktop{
-            overflow: auto;
+            overflow: auto;//desaparece barra horizontal
             @include m.grid(4,2rem);
         }
     }
 }
 .lugar{
     scroll-snap-align: center;
+    &__grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
     &__imagen{
         border-radius: 1rem;
     }
     &__nombre{
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    &__distancia{
         font-size: 1.7rem;
+        font-weight: 700;
+        color: v.$primario;
     }
 }

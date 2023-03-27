@@ -19,6 +19,9 @@
             margin-top: 30rem;
         }
     }
+    &__busqueda-label{
+        font-weight: 700;
+    }
     &__busqueda-boton{
         @include m.boton(v.$blanco, v.$primario);
         &:hover{
