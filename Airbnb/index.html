@@ -11,6 +11,47 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="barra contenedor">
+            <div class="barra__logo">
+                <p class="barra__nombre">Viaje</p>
+            </div>
+            <nav class="barra__navegacion">
+                <a href="#">Lugares para hospedarte</a>
+                <a href="#">Experiencias</a>
+                <a href="#">Experiencias en línea</a>
+            </nav>
+            <nav class="barra__login">
+                <a href="#">Hazte anfitrión</a>
+            </nav>
+        </div>
+
+        <form action="#" class="formulario contenedor">
+            <div class="formulario__campo">
+                <label for="ubicacion" class="formulario__label">Ubicación</label>
+                <input id="ubicacion" type="text" class="formulario__input" placeholder="¿A dónde viajas?">
+            </div><!--end campo-->
+            <div class="formulario__campo">
+                <label for="llegada" class="formulario__label">Llegada</label>
+                <input id="llegada" type="date" class="formulario__input">
+            </div><!--end campo-->
+            <div class="formulario__campo">
+                <label for="salida" class="formulario__label">Salida</label>
+                <input id="salida" type="date" class="formulario__input">
+            </div><!--end campo-->
+            <div class="formulario__campo">
+                <label for="huespedes" class="formulario__label">Huéspedes</label>
+                <input id="huespedes" type="number" min="0" class="formulario__input" placeholder="¿Cuántos?">
+            </div><!--end campo-->
+            <div class="formulario__campo">
+                <input type="submit" class="formulario__submit" value="Buscar">
+            </div><!--end campo-->
+        </form><!-- end formulario -->
+
+        <div class="header__busqueda contenedor">
+            <p class="header__busqueda-label">¿No sabes a dónde ir?</p>
+            <a href="#"class="header__busqueda-boton">Búsqueda Flexible</a>
+        </div>
+    </header><!-- END HEADER -->
 </body>
 </html>
