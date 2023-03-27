@@ -1,0 +1,34 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+/*---------------------------------------------------------*/
+/*BARRA*/
+.barra{
+    display: none;
+    @include m.tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nombre{
+        color: v.$blanco;
+        font-weight: 700;
+        margin: 0;
+    }
+    &__navegacion{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    &__link{
+        color: v.$blanco;
+        font-weight: 700;
+        padding: 1rem 0;
+        transition-property: background-color;
+        transition-duration: .3s;
+        &:hover{
+            background-color: v.$primario;
+        }
+    }
+    
+}
