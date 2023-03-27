@@ -1,0 +1,28 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+/*---------------------------------------------------------*/
+/*LUGARES*/
+.lugares{
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(4,30rem);
+        column-gap: 2rem;
+        @include m.scrollHorizontal;
+        // @include m.tablet{
+        //     @include m.grid(2,2rem);
+        // }
+        @include m.desktop{
+            overflow: auto;
+            @include m.grid(4,2rem);
+        }
+    }
+}
+.lugar{
+    scroll-snap-align: center;
+    &__imagen{
+        border-radius: 1rem;
+    }
+    &__nombre{
+        font-size: 1.7rem;
+    }
+}

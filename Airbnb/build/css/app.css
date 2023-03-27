@@ -540,4 +540,36 @@ a {
   color: #e8505b;
   font-weight: 700;
 }
+
+/*---------------------------------------------------------*/
+/*LUGARES*/
+.lugares__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+@media (min-width: 1024px) {
+  .lugares__grid {
+    overflow: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lugar {
+  scroll-snap-align: center;
+}
+.lugar__imagen {
+  border-radius: 1rem;
+}
+.lugar__nombre {
+  font-size: 1.7rem;
+}
 /*# sourceMappingURL=app.css.map */
