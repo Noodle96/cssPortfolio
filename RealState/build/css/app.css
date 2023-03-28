@@ -495,7 +495,7 @@ p {
 @media (min-width: 768px) {
   .propiedades__grid {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -566,5 +566,79 @@ p {
 }
 .propiedad__enlace:hover {
   background-color: #283142;
+}
+
+/*---------------------------------------------------------------*/
+/*DESTACADA*/
+.destacada {
+  margin-top: 5rem;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, #3b4862 50%, #3b4862 100%), url(../img/destacada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, -50rem -30rem;
+}
+@media (min-width: 768px) {
+  .destacada {
+    background-image: linear-gradient(to right, transparent 0%, transparent 50%, #3b4862 50%, #3b4862 100%), url(../img/destacada.jpg);
+    background-position: center, -50rem center;
+  }
+}
+.destacada__grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .destacada__grid {
+    grid-template-rows: unset;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.destacada__contenido {
+  padding: 5rem;
+  grid-row: 2/3;
+}
+@media (min-width: 768px) {
+  .destacada__contenido {
+    padding: 10rem 5rem;
+    grid-column: 2/3;
+  }
+}
+.destacada__heading {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.destacada__texto {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.destacada__precio {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.destacada__enlace {
+  background-color: #FFFFFF;
+  padding: 1.5rem 4rem;
+  color: #3b4862;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+}
+@media (min-width: 768px) {
+  .destacada__enlace {
+    width: auto;
+  }
+}
+.destacada__enlace:hover {
+  background-color: #e6e6e6;
 }
 /*# sourceMappingURL=app.css.map */
