@@ -675,4 +675,32 @@ p {
   margin-top: -0.5rem;
   background-image: linear-gradient(to right, #3b4862 0%, #3b4862 50%, #6277a1 50%, #6277a1 100%);
 }
+
+.testimonial {
+  text-align: justify;
+}
+.testimonial__imagen {
+  width: 20rem;
+  margin: 0 auto;
+}
+.testimonial__contenido {
+  background-color: #FFFFFF;
+  margin-top: -10rem;
+  padding: 10rem 2rem 2rem 2rem;
+}
+.testimonial__nombre {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.testimonial__texto::before {
+  content: "";
+  background-image: url(../img/quote.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 1rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
 /*# sourceMappingURL=app.css.map */
