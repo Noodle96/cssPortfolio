@@ -51,9 +51,12 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin heading{
+@mixin heading($salto: false){
     font-weight: 400;
     span{
+        @if($salto){
+            display: block;
+        }
         font-weight: 700;
     }
     &::after{

@@ -1,0 +1,18 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+/*---------------------------------------------------------------*/
+/*TESTIMONIAL-BLOG*/
+.testimoniales-blog{
+    margin-top: 5rem;
+    @include m.desktop{
+        @include m.grid(3,4rem);
+    }
+    &__blog{
+        @include m.desktop{
+            grid-column: 2/4;
+        }
+    }
+    &__heading{
+        @include m.heading(true);
+    }
+}
