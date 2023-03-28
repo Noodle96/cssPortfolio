@@ -1,0 +1,42 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+/*---------------------------------------------------------------*/
+/*FOOTER*/
+.footer{
+    padding-top: 5rem;
+    margin-top: 5rem;
+    background-color: v.$primario;
+    &__grid{
+        @include m.tablet{
+            @include m.grid(3,2rem);
+        }
+    }
+    &__heading{
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    &__texto{
+        color: v.$blanco;
+        text-align: justify;
+    }
+    &__navegacion{
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        color: v.$blanco;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    &__copyright{
+        background-color: darken(v.$primario,10%);
+        text-align: center;
+        padding: 1rem;
+        margin: 5rem 0 0 0;
+        color: v.$blanco;
+    }
+}

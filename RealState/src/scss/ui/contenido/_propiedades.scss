@@ -21,7 +21,7 @@
     background-color: v.$blanco;
     &__imagen{
         aspect-ratio: 10/6;
-        background-size: cover;
+        background-size: auto 200%;
         position: relative;
     }
     @for $i from 1 through 6{
