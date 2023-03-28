@@ -703,4 +703,70 @@ p {
   width: 3rem;
   height: 3rem;
 }
+
+.entrada {
+  background-color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.entrada:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .entrada {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .entrada__imagen-contenedor {
+    grid-column: 1/3;
+  }
+}
+.entrada__imagen {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.entrada__contenido {
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .entrada__contenido {
+    grid-column: 3/6;
+  }
+}
+.entrada__meta {
+  font-size: 1.4rem;
+}
+.entrada__enlace {
+  background-color: #3b4862;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+}
+@media (min-width: 768px) {
+  .entrada__enlace {
+    width: auto;
+  }
+}
+.entrada__enlace:hover {
+  background-color: #283142;
+}
+@media (min-width: 768px) {
+  .entrada__enlace {
+    display: inline-block;
+  }
+}
 /*# sourceMappingURL=app.css.map */
